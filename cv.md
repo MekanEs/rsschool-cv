@@ -3,7 +3,9 @@
 ### Junior Frontend Developer
 #### Contact information:
 ***Phone:*** +375298699787
+
 __E-mail:__ Mekan.es1997@gmail.com
+
 __Telegram:__ [@Mekan](https://t.me/Mekan997)
 ===
 ## About myself:
@@ -68,4 +70,4 @@ Solution:
         }
        return v
     }
-    ```
+   
