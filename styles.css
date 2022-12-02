@@ -1,0 +1,49 @@
+.content{
+    font-family: "Poppins", sans-serif ;
+    background-color: rgb(94, 90, 86);
+    color: antiquewhite;
+    font-size: larger;
+}
+.headercontent{
+    font-size: 10ch;
+
+}
+.imgbox{
+    background-color:  rgb(207, 207, 23);
+}
+
+
+.contactsbox{
+    display: flex;
+    flex-direction: row ;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.contactsItem{
+
+
+}
+.coloredFont{
+    color: rgb(196, 196, 48);
+    font-weight:lighter;
+    font-size: larger;
+}
+.skillsbox{
+    display: flex;
+    flex-direction: column ;
+    
+}
+.aboutme{
+    width: 50%;
+    flex-wrap: wrap;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:  rgb(207, 207, 23);
+    color: white;
+    text-align: center;
+  }
