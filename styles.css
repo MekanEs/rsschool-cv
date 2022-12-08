@@ -1,8 +1,12 @@
 .content{
-    font-family: "Poppins", sans-serif ;
+    font-family: Montserrat;
     background-color: #3a3737;
-    color: #c1c2bd;
+    color: #ffffff;
     font-size: 30px;
+    position: center;
+    display: flex;
+    flex-flow: column;
+    margin-left: 10%;
 }
 .main_content{
     margin-top: 50px;
@@ -22,23 +26,31 @@
 }
 .img_box{
 
-    width: content-box;
-}
 
+    width: 50px;
+    height: 50px;
+
+}
+.avatar{
+    width: 130px;
+    border-radius: 10px;
+
+}
  
 .contacts_box{
     display: flex;
-    flex-direction: row ;
-    flex-flow: wrap;
+    flex-flow: column ;
+
     justify-content: space-evenly;
-    width: 50%;
+    width: 80%;
 }
 .contactsItem{
-
-
+margin-left: 10px;
+    padding-left: 10px;
+    list-style: revert;
 }
 .coloredFont{
-    color: rgb(238, 238, 59);
+    color: #ffd233;
     font-weight:lighter;
     font-size: larger;
 }
@@ -56,7 +68,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(238, 238, 59);
+    background-color: #ffdd51;
     color: white;
     text-align: center;
     justify-content: space-evenly;
@@ -65,3 +77,41 @@
     height: 20px;
     margin-left: 10px;
 }
+.navigation{
+    display: flex;
+    flex-flow: row;
+    background-color: #ffdd51;
+    color: #3a3737;
+    text-transform: uppercase;
+font-size: 16px;
+    color: #000d15;
+    text-decoration: none;
+}
+.nav_el{
+    list-style: none;
+    text-decoration: none;
+    margin-left: 30px;
+    text-decoration-style: dashed;
+    color: #000d15;
+}
+.code_box{
+    font-size: 10px;
+
+    width: 70%;
+
+
+}
+.code_box:hover{
+    width: 80%;
+}
+.hljs{
+    font-size: 15px;
+    border-color: #0a1015;
+    border-radius: 10px;
+}
+.code_content {
+
+    border-radius: 10px;
+}
+
+

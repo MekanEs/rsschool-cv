@@ -9,23 +9,39 @@
 <body class="content">
 
 <header class="header_content">
-    <nav>Navigation</nav>
+
+    <nav class="navigation">
+        <ul class="navigation">
+            <li class="nav_el" ><a class="nav_el" href="#contacts">Contacts</a> </li>
+            <li class="nav_el"> <a class="nav_el" href="#skills">Skills</a></li>
+            <li class="nav_el"><a class="nav_el" href="#aboutMe">About me</a></li>
+            <li class="nav_el"><a class="nav_el" href="#projects">Code</a></li>
+
+        </ul>
+    </nav>
+
 </header>
 
 <main class="main_content">
 
-    <div class="img_box">My image</div>
-<h1><span class="coloredFont">Mekan</span> Esenjanow</h1>
+
+    <h1><span class="img_box"><img class="avatar" src="assets/My_photo.png"></span>
+        <span class="coloredFont">Mekan</span> Esenjanow</h1>
 
     <div class="coloredFont">Contacts:</div>
-    <div class="contacts_box">
+    <div class="contacts_box" id="contacts">
+<ul>
+    <li><div class="contactsItem">Mail: mekan.es1997@gmail.com</div></li>
+    <li><div class="contactsItem">telegram: Mekan</div></li>
+    <li><div class="contactsItem">github: Mekan</div></li>
 
-        <div class="contactsItem">Mail:mekan.es1997@gmail.com</div>
-        <div class="contactsItem">telegram: Mekan</div>
-        <div class="contactsItem">github: Mekan</div>
+</ul>
+
+
+
     </div>
     <span class="coloredFont">Skills:</span>
-    <div class="skills_box">
+    <div class="skills_box" id="skills">
         <ul>
             <li>HTML, CSS, ModuleCSS</li>
             <li>JS, React</li>
@@ -34,10 +50,35 @@
 
     </div>
     <div class="about_me">
-        <div class="coloredFont">About me:</div>
+        <div class="coloredFont" id="aboutMe">About me:</div>
         <p>Some text about meSome text about meSome text about meSome text about meSome text about me</p>
     </div>
-    <div>Projects
+    <div id="projects" class="coloredFont"
+    class="code_box">Code:
+        <code class="code_content">
+        <pre class="hljs" style="display: block;border-color: #0a1015; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68); width: fit-content"><span class="hljs-function"><span class="hljs-keyword" style="font-weight: 70;">function</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 70;">dirReduc</span>(<span class="hljs-params">arr</span>)</span>{
+
+        <span class="hljs-keyword" style="font-weight: 70;">let</span> z = []
+
+        <span class="hljs-keyword" style="font-weight: 70;">for</span> (<span class="hljs-keyword" style="font-weight: 70;">let</span> i=<span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>; i&lt;arr.length; i++){
+            <span class="hljs-keyword" style="font-weight: 70;">if</span>(z.length===<span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>){
+                z.push(arr[i])
+            } <span class="hljs-keyword" style="font-weight: 70;">else</span> <span class="hljs-keyword" style="font-weight: 70;">if</span>(arr[i]===<span class="hljs-string" style="color: rgb(136, 0, 0);">"NORTH"</span>&amp;&amp;z[z.length<span class="hljs-number" style="color: rgb(136, 0, 0);">-1</span>]===<span class="hljs-string" style="color: rgb(136, 0, 0);">"SOUTH"</span>){
+                z.pop()
+            }<span class="hljs-keyword" style="font-weight: 70;">else</span> <span class="hljs-keyword" style="font-weight: 70;">if</span>(arr[i]===<span class="hljs-string" style="color: rgb(136, 0, 0);">"SOUTH"</span>&amp;&amp;z[z.length<span class="hljs-number" style="color: rgb(136, 0, 0);">-1</span>]===<span class="hljs-string" style="color: rgb(136, 0, 0);">"NORTH"</span>){
+                z.pop()
+            }<span class="hljs-keyword" style="font-weight: 70;">else</span> <span class="hljs-keyword" style="font-weight: 70;">if</span>(arr[i]===<span class="hljs-string" style="color: rgb(136, 0, 0);">"EAST"</span>&amp;&amp;z[z.length<span class="hljs-number" style="color: rgb(136, 0, 0);">-1</span>]===<span class="hljs-string" style="color: rgb(136, 0, 0);">"WEST"</span>){
+                z.pop()
+            }<span class="hljs-keyword" style="font-weight: 70;">else</span> <span class="hljs-keyword" style="font-weight: 70;">if</span>(arr[i]===<span class="hljs-string" style="color: rgb(136, 0, 0);">"WEST"</span>&amp;&amp;z[z.length<span class="hljs-number" style="color: rgb(136, 0, 0);">-1</span>]===<span class="hljs-string" style="color: rgb(136, 0, 0);">"EAST"</span>){
+                z.pop()
+            } <span class="hljs-keyword" style="font-weight: 70;">else</span>{
+                z.push(arr[i])
+            }
+
+        }
+        <span class="hljs-keyword" style="font-weight: 70;">return</span> z
+    }</pre>
+        </code>
     </div>
 </main>
 
