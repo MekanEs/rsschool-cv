@@ -4,93 +4,161 @@
 <head>
     <title>rs-school-cv-html</title>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="content">
+<body >
+<div class="container" >
+    <header class="header-box">
 
-<header class="header_content">
-
-    <nav class="navigation">
-        <ul class="navigation">
-            <li class="nav_el" ><a class="nav_el" href="#contacts">Contacts</a> </li>
-            <li class="nav_el"> <a class="nav_el" href="#skills">Skills</a></li>
-            <li class="nav_el"><a class="nav_el" href="#aboutMe">About me</a></li>
-            <li class="nav_el"><a class="nav_el" href="#projects">Code</a></li>
-
-        </ul>
-    </nav>
-
-</header>
-
-<main class="main_content">
+        <img class="avatar" alt="avatar" src="assets/My_photo.png">
 
 
-    <h1><span class="img_box"><img class="avatar" src="assets/My_photo.png"></span>
-        <span class="coloredFont">Mekan</span> Esenjanow</h1>
+        <div class="nav_name">
 
-    <div class="coloredFont">Contacts:</div>
-    <div class="contacts_box" id="contacts">
-<ul>
-    <li><div class="contactsItem">Mail: mekan.es1997@gmail.com</div></li>
-    <li><div class="contactsItem">telegram: Mekan</div></li>
-    <li><div class="contactsItem">github: Mekan</div></li>
-
-</ul>
+            <div class="name_el">
+            <h2 class="coloredFont">Mekan Esenjanows</h2>
+            <h3>Junior Web Developer</h3>
+            </div>
 
 
 
-    </div>
-    <span class="coloredFont">Skills:</span>
-    <div class="skills_box" id="skills">
-        <ul>
-            <li>HTML, CSS, ModuleCSS</li>
-            <li>JS, React</li>
-            <li>Basics in: Redux, Axios, Formik, Git</li>
-        </ul>
+        </div>
 
-    </div>
-    <div class="about_me">
-        <div class="coloredFont" id="aboutMe">About me:</div>
-        <p>Some text about meSome text about meSome text about meSome text about meSome text about me</p>
-    </div>
-    <div id="projects" class="coloredFont"
-    class="code_box">Code:
-        <code class="code_content">
-        <pre class="hljs" style="display: block;border-color: #0a1015; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68); width: fit-content"><span class="hljs-function"><span class="hljs-keyword" style="font-weight: 70;">function</span> <span class="hljs-title" style="color: rgb(136, 0, 0); font-weight: 70;">dirReduc</span>(<span class="hljs-params">arr</span>)</span>{
+    </header>
 
-        <span class="hljs-keyword" style="font-weight: 70;">let</span> z = []
 
-        <span class="hljs-keyword" style="font-weight: 70;">for</span> (<span class="hljs-keyword" style="font-weight: 70;">let</span> i=<span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>; i&lt;arr.length; i++){
-            <span class="hljs-keyword" style="font-weight: 70;">if</span>(z.length===<span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>){
-                z.push(arr[i])
-            } <span class="hljs-keyword" style="font-weight: 70;">else</span> <span class="hljs-keyword" style="font-weight: 70;">if</span>(arr[i]===<span class="hljs-string" style="color: rgb(136, 0, 0);">"NORTH"</span>&amp;&amp;z[z.length<span class="hljs-number" style="color: rgb(136, 0, 0);">-1</span>]===<span class="hljs-string" style="color: rgb(136, 0, 0);">"SOUTH"</span>){
-                z.pop()
-            }<span class="hljs-keyword" style="font-weight: 70;">else</span> <span class="hljs-keyword" style="font-weight: 70;">if</span>(arr[i]===<span class="hljs-string" style="color: rgb(136, 0, 0);">"SOUTH"</span>&amp;&amp;z[z.length<span class="hljs-number" style="color: rgb(136, 0, 0);">-1</span>]===<span class="hljs-string" style="color: rgb(136, 0, 0);">"NORTH"</span>){
-                z.pop()
-            }<span class="hljs-keyword" style="font-weight: 70;">else</span> <span class="hljs-keyword" style="font-weight: 70;">if</span>(arr[i]===<span class="hljs-string" style="color: rgb(136, 0, 0);">"EAST"</span>&amp;&amp;z[z.length<span class="hljs-number" style="color: rgb(136, 0, 0);">-1</span>]===<span class="hljs-string" style="color: rgb(136, 0, 0);">"WEST"</span>){
-                z.pop()
-            }<span class="hljs-keyword" style="font-weight: 70;">else</span> <span class="hljs-keyword" style="font-weight: 70;">if</span>(arr[i]===<span class="hljs-string" style="color: rgb(136, 0, 0);">"WEST"</span>&amp;&amp;z[z.length<span class="hljs-number" style="color: rgb(136, 0, 0);">-1</span>]===<span class="hljs-string" style="color: rgb(136, 0, 0);">"EAST"</span>){
-                z.pop()
-            } <span class="hljs-keyword" style="font-weight: 70;">else</span>{
-                z.push(arr[i])
-            }
+
+
+
+
+    <div class="columns">
+        <div class="left-column">
+
+
+            <ul class="left-column_box" id="contacts">
+                <div class="coloredFont">Contacts:</div>
+                    <li><a class="link" href="mekan.es1997@gmail.com" >Mail</a></li>
+                    <li><a class="link" href="https://t.me/Mekan997" >Telegram</a></li>
+                    <li><a class="link" href="https://discordapp.com/users/793507482633895950/" >Discord</a></li>
+            </ul>
+
+
+            <div class="left-column_box" id="skills">
+                <ul>
+                    <span class="coloredFont">Skills:</span>
+                    <li>HTML, CSS, ModuleCSS</li>
+                    <li>JS, React</li>
+                    <li>Basics in: Redux, Axios, Formik, Git</li>
+                </ul>
+
+            </div>
+            <div class="left-column_box" id="education">
+
+                <ul>
+                    <span class="coloredFont">Education:</span>
+                    <li>Belarusian State Technological University</li>
+
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="right_column">
+            <nav class="nav_box">
+                <ul class="navigation">
+                    <li class="nav_list" ><a class="nav_el" href="#contacts">Contacts</a> </li>
+                    <li class="nav_list" > <a class="nav_el" href="#skills">Skills</a></li>
+                    <li class="nav_list" ><a class="nav_el" href="#aboutMe">About me</a></li>
+                    <li class="nav_list" ><a class="nav_el" href="#code">Code</a></li>
+                </ul>
+            </nav>
+
+            <div class="right-column_box">
+                <div class="coloredFont" id="aboutMe">About me:</div>
+              <div>  <div>I am 25 years old, I work as an engineer.
+               Like a half year ago I started learning frontend development.</div>
+                    <p>I think that my attitude of mind will help me to become a good developer.
+                    I really liked studying this profession.
+                    Making something that will help people inspires me</p>
+                    <div>LANGUAGES:</div>
+                Russian - native speaker
+                  <div>English - A2</div>
+              </div>
+
+                <div id="code" class="coloredFont"
+                     class="code_box">Code:
+                    <code class="code_content">
+        <pre class="hljs" ><span class="hljs-function"><span class="hljs-keyword" >function</span> <span class="hljs-title"  >dirReduc</span>(<span class="hljs-params">arr</span>)</span>{
+
+        <span class="hljs-keyword" >let</span> z = []
+
+        <span class="hljs-keyword" >for</span> (<span class="hljs-keyword" >let</span> i=<span class="hljs-number" >0</span>; i&lt;arr.length; i++){
+            <span class="hljs-keyword" >if</span>(z.length===<span class="hljs-number" >0</span>){
+      z.push(arr[i])
+ } <span class="hljs-keyword" >else</span> <span class="hljs-keyword" >if</span>(arr[i]===<span class="hljs-string" style="color: rgb(136, 0, 0);">"NORTH"</span>&amp;&amp;z[z.length<span class="hljs-number" >-1</span>]===<span class="hljs-string" >"SOUTH"</span>){
+      z.pop()
+ }<span class="hljs-keyword" >else</span> <span class="hljs-keyword" >if</span>(arr[i]===<span class="hljs-string" >"SOUTH"</span>&amp;&amp;z[z.length<span class="hljs-number" >-1</span>]===<span class="hljs-string" >"NORTH"</span>){
+      z.pop()
+ }<span class="hljs-keyword" >else</span> <span class="hljs-keyword" >if</span>(arr[i]===<span class="hljs-string" >"EAST"</span>&amp;&amp;z[z.length<span class="hljs-number" >-1</span>]===<span class="hljs-string" >"WEST"</span>){
+       z.pop()
+ }<span class="hljs-keyword" >else</span> <span class="hljs-keyword" >if</span>(arr[i]===<span class="hljs-string" >"WEST"</span>&amp;&amp;z[z.length<span class="hljs-number" >-1</span>]===<span class="hljs-string" >"EAST"</span>){
+       z.pop()
+} <span class="hljs-keyword" >else</span>{
+       z.push(arr[i])
+ }
 
         }
-        <span class="hljs-keyword" style="font-weight: 70;">return</span> z
+        <span class="hljs-keyword" >return</span> z
     }</pre>
-        </code>
+                    </code>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
     </div>
-</main>
+    <footer class="footer">
 
-<footer class="footer">
+        <a href="https://rs.school/js/">
+            <img class="logo" alt="logo" src="assets/school_logo.svg">
+        </a>
+<span>2022-2023</span>
+        <a class="footer_link" href="https://github.com/MekanEs">
+                Visit my GitHub
+            <img class="logo" alt="logo" src="assets/git_logo.png">
+        </a>
+    </footer>
 
-    <a href="https://rs.school/js/">
-        <img class="logo" alt="logo" src="assets/school_logo.svg">
-    </a>
+</div>
 
-    <a href="https://github.com/MekanEs">
-        <img class="logo" alt="logo" src="assets/git_logo.png">
-    </a>
-</footer>
+
+
+
+
+
+
 </body>
 </html>
