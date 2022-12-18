@@ -182,3 +182,14 @@ padding-left: 5%;
 .hljs-title{
     color: rgb(136, 0, 0)
 }
+.cv-link{
+    text-decoration: none;
+    color: #0a1015;
+}
+.h{
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: larger;
+    text-decoration-line:underline;
+
+}
