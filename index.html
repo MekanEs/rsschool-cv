@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>rs-school-cv-html</title>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+<div class="container" >
+    <header class="header-box">
+
+        <img class="avatar" alt="avatar" src="assets/My_photo.png">
+
+
+        <div class="nav_name">
+
+            <div class="name_el">
+            <h1 class="coloredFont">Mekan Esenjanow</h1>
+            <h2>Junior Web Developer</h2>
+            </div>
+
+
+
+        </div>
+
+    </header>
+
+
+
+
+
+
+    <div class="columns">
+        <div class="left-column">
+
+            <span id="contacts" class="coloredFont">Contacts:</span>
+            <ul class="left-column_box">
+                    <li><a class="link" href="mailto:mekan.es1997@gmail.com" >Mail</a></li>
+                    <li><a class="link" href="https://t.me/Mekan997" >Telegram</a></li>
+                    <li><a class="link" href="https://discordapp.com/users/793507482633895950/" >Discord</a></li>
+            </ul>
+
+
+            <div class="left-column_box" >
+                <span id="skills" class="coloredFont">Skills:</span>
+                <ul>
+
+                    <li>HTML, CSS, ModuleCSS</li>
+                    <li>JS, React</li>
+                    <li>Basics in: Redux, Axios, Formik, Git</li>
+                </ul>
+
+            </div>
+            <div class="left-column_box" id="education">
+                <span class="coloredFont">Education:</span>
+                <ul>
+
+                    <li>Belarusian State Technological University</li>
+
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="right_column">
+            <nav class="nav_box">
+                <ul class="navigation">
+                    <li class="nav_list" ><a class="nav_el" href="#contacts">Contacts</a> </li>
+                    <li class="nav_list" > <a class="nav_el" href="#skills">Skills</a></li>
+                    <li class="nav_list" ><a class="nav_el" href="#aboutMe">About me</a></li>
+                    <li class="nav_list" ><a class="nav_el" href="#code">Code</a></li>
+                </ul>
+            </nav>
+
+            <div class="right-column_box">
+                <div class="coloredFont" id="aboutMe">About me:</div>
+              <div>  <div>I am 25 years old, I work as an engineer.
+               Like a half year ago I started learning frontend development.</div>
+                    <p>I think that my attitude of mind will help me to become a good developer.
+                    I really liked studying this profession.
+                    Making something that will help people inspires me.</p>
+                    <div class="h">LANGUAGES:</div>
+                Russian - native speaker
+
+                  <div >English - A2</div>
+                  <div class="h">Projects:</div>
+                  <a class="cv-link" href="https://mekanes.github.io/rsschool-cv/">My CV</a>
+              </div>
+
+                <div id="code"
+                     class="code_box, coloredFont">Code:
+                    <div class="code_content">
+        <pre class="hljs" ><span class="hljs-function"><span class="hljs-keyword" >function</span> <span class="hljs-title"  >dirReduc</span>(<span class="hljs-params">arr</span>)</span>{
+
+        <span class="hljs-keyword" >let</span> z = []
+
+        <span class="hljs-keyword" >for</span> (<span class="hljs-keyword" >let</span> i=<span class="hljs-number" >0</span>; i&lt;arr.length; i++){
+            <span class="hljs-keyword" >if</span>(z.length===<span class="hljs-number" >0</span>){
+      z.push(arr[i])
+ } <span class="hljs-keyword" >else</span> <span class="hljs-keyword" >if</span>(arr[i]===<span class="hljs-string" style="color: rgb(136, 0, 0);">"NORTH"</span>&amp;&amp;z[z.length<span class="hljs-number" >-1</span>]===<span class="hljs-string" >"SOUTH"</span>){
+      z.pop()
+ }<span class="hljs-keyword" >else</span> <span class="hljs-keyword" >if</span>(arr[i]===<span class="hljs-string" >"SOUTH"</span>&amp;&amp;z[z.length<span class="hljs-number" >-1</span>]===<span class="hljs-string" >"NORTH"</span>){
+      z.pop()
+ }<span class="hljs-keyword" >else</span> <span class="hljs-keyword" >if</span>(arr[i]===<span class="hljs-string" >"EAST"</span>&amp;&amp;z[z.length<span class="hljs-number" >-1</span>]===<span class="hljs-string" >"WEST"</span>){
+       z.pop()
+ }<span class="hljs-keyword" >else</span> <span class="hljs-keyword" >if</span>(arr[i]===<span class="hljs-string" >"WEST"</span>&amp;&amp;z[z.length<span class="hljs-number" >-1</span>]===<span class="hljs-string" >"EAST"</span>){
+       z.pop()
+} <span class="hljs-keyword" >else</span>{
+       z.push(arr[i])
+ }
+
+        }
+        <span class="hljs-keyword" >return</span> z
+    }</pre>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <footer class="footer">
+
+        <a href="https://rs.school/js/">
+            <img class="logo" alt="logo" src="assets/school_logo.svg">
+        </a>
+<span>2022-2023</span>
+        <a class="footer_link" href="https://github.com/MekanEs">
+                Visit my GitHub
+            <img class="logo" alt="logo" src="assets/git_logo.png">
+        </a>
+    </footer>
+
+</div>
+
+
+
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
